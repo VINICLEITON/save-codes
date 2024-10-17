@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-b">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        .main {
+            width: 100%;
+            background-color: #ffffff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            margin: 0 -20px;
+            position: left;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            padding: 15px 34px;
+            border-radius: 4rem;
+            transition: background-color 0.3s, transform 0.3s;
+            display: block;
+            width: 120px;
+            transform: translateX(5px);
+            z-index: 1;
+        }
+
+        li:hover a {
+            
+            
+
+            transform: scaleX(1.1);
+            transform-origin: right;
+        }
+
+        .green {
+            background-color: #4CAF50;
+        }
+
+        .dark-green {
+            background-color: #228B22;
+        }
+
+        .yellow {
+            background-color: #FFC300;
+        }
+
+        .pink {
+            background-color: #FF69B4;
+        }
+
+        .purple {
+            background-color: #800080;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <ul>
+            <li><a class="home green" href="#">Home</a></li>
+            <li><a class="about dark-green" href="#">About</a></li>
+            <li><a class="portfolio yellow" href="#">Portfolio</a></li>
+            <li><a class="contact pink" href="#">Contact</a></li>
+            <li><a class="more purple" href="#">More</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

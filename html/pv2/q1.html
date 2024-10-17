@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Banner e Rodapé Fixos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmT_1Qkz206eF1Wp7zcFXng--Rp6eAj4WYQA&s) no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .banner, .rodape {
+            position: fixed;
+            width: 100%;
+            left: 10;
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% de transparência */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .conteudo{
+            position: absolute;
+            top: 50%;
+            left: -10px;
+            transform: translateY(-60%);
+        }
+
+        .banner {
+            top: 0;
+        }
+
+        .rodape {
+            bottom: 0;
+        }
+
+        .conteudo {
+            padding: 60px 20px 40px; /* Espaço para o banner e o rodapé */
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">Este é o Banner</div>
+    <div class="conteudo">
+        
+        <p>Paragrafo </p>
+        <p>Paragrafo </p>
+        <p>Paragrafo </p>
+        <p>Paragrafo </p>
+        <p>Paragrafo </p>
+        <p>Paragrafo </p>
+        <p>Paragrafo </p>
+    </div>
+    <div class="rodape"> Rodapé</div>
+</body>
+</html>
